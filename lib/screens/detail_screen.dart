@@ -25,8 +25,8 @@ class DetailScreen extends StatelessWidget {
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      candi.imageAsset,
+                    child: CachedNetworkImage(
+                      imageUrl: candi.imageUrls[0],
                       width: double.infinity,
                       height: 300,
                       fit: BoxFit.cover,
